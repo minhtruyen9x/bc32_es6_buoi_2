@@ -1,0 +1,117 @@
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1f1f1;
+
+}
+
+/* MAIN CSS */
+.vglasses__left {
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vglasses__left .col-4 {
+    align-self: center;
+}
+
+.vglasses__items {
+    cursor: pointer;
+}
+
+.vglasses__right {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vglasses__model {
+    background-image: url('../img/model.jpg');
+    background-position: center top;
+    background-size: cover;
+    height: 600px;
+
+}
+
+.vglasses__model img {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 238px;
+    height: 85px;
+    opacity: 0.9;
+}
+
+.vglasses__card {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+.vglasses__info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    color: white;
+    padding: 20px;
+    display: none;
+}
+
+.vglasses__info__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.vglasses__info__sale {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.vglasses__info__price {
+    padding: 4px 6px;
+    background-color: red;
+    border-radius: 4px;
+    margin-right: 12px;
+}
+
+.vglasses__info__left {
+    color: green;
+}
+
+.vglasses__info__dessribtion {
+    color: #ccc;
+}
+
+.vglasses__item {
+    border: 2px solid transparent;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    align-self: unset !important;
+    cursor: pointer;
+}
+
+.vglasses__item.active,
+.vglasses__item:hover {
+    border-color: red;
+}
+
+.vglasses__item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+#glasses {
+    transition: all 0.5s;
+}
